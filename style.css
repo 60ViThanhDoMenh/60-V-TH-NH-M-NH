@@ -1,0 +1,30 @@
+h1 {
+  text-align: center;
+  color: red;
+  font-size: 50px;
+}
+
+.link {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+
+div {
+  width: fit-content;
+  height: fit-content;
+  padding: auto;
+  margin: 30px;
+}
+
+a:hover {
+  color: red;
+}
+
+a:visited {
+  color: purple;
+}
+
+span {
+  font-weight: 600;
+}
