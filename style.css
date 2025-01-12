@@ -11,10 +11,15 @@ h1 {
 }
 
 div {
-  width: fit-content;
   height: fit-content;
-  padding: auto;
+  width: fit-content;
+  padding: auto
+
   margin: 30px;
+}
+
+a {
+  text-decoration: none;
 }
 
 a:hover {
@@ -27,4 +32,36 @@ a:visited {
 
 span {
   font-weight: 600;
+}
+
+.hehe {
+  width: fit-content;
+  height: fit-content;
+  font-size: 20px;
+
+}
+
+ol {
+  list-style-type: upper-roman;
+  
+
+}
+
+
+p {
+  font-size: 20px;
+}
+
+h3{
+  margin-top: 50px;
+}
+
+pre{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+span{
+  font-weight: bold;
 }
