@@ -54,11 +54,15 @@ p {
 
 h3{
   margin-top: 50px;
+  font-size: 30px;
 }
 
 pre{
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 5px;
+  height: fit-content;
+  width: fit-content;
 
 }
 
