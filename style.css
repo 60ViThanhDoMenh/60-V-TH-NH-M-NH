@@ -2,7 +2,6 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: image(https://www.google.com/url?sa=i&url=https%3A%2F%2Ftienphong.vn%2Fchuyen-gi-xay-ra-neu-ban-nhin-thang-vao-mat-troi-post956354.tpo&psig=AOvVaw3dJeqL1Had6Wiy2vZdMmkX&ust=1739978958375000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCICw1_DEzYsDFQAAAAAdAAAAABAE);
 }
 
 /* HEADER CHUNG */
@@ -13,7 +12,8 @@ header {
   background: linear-gradient(135deg, #385f84, #3498db); /* Màu xanh đậm */
   padding: 0 30px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  
+  border-bottom: 5px solid rgb(188, 183, 183);
+  padding-bottom: 0px;
   
 }
 
@@ -57,14 +57,14 @@ h1 {
   color: white;
   font-size: 16px;
   font-weight: bold;
-  padding: 10px 15px;
+  padding: 10px 20px;
   transition: 0.3s;
   display: inline-block;
 }
 
 .nav-menu a:hover {
   color: #f1c40f; /* Màu vàng khi hover */
-  transform: translate(-10px,-15px) scale(1.3);
+  transform: translate(-5px,-15px) scale(1.3);
   
 }
 
@@ -82,8 +82,8 @@ nav {
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  padding: 10px;
-  padding-left: 0px;
+  padding: 0px 10px 10px 0px;
+  
   
 }
 
@@ -119,11 +119,13 @@ nav {
   
 }
 
-.menu div:hover {
+.menu div:hover,
+.menu div.active {
   background: #3498db;
   transform: scale(1.25);
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
 }
+
 
 .menu a {
   text-decoration: none;
@@ -142,6 +144,7 @@ nav {
 #image-display {
   width: 80%;
   height: 622px;
+  background: #ffffff;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -151,12 +154,41 @@ nav {
   justify-content: center;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
   
+  
 }
 
 ul li a {
   font-size: 30px;
 }
 
+.nav-menu li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #f1c40f; /* Màu gạch chân */
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-menu li a:hover::after,
+.nav-menu li a.active::after {
+  transform: scale(0.8);
+}
+
+.nav-menu li a.active {
+  color: #f1c40f; /* Màu chữ cho mục được chọn */
+  font-weight: bold;
+  transform: scale(1.3);
+}
+
+
+
+#ThanhDoMenh{
+  color: #f1c40f;
+}
 
 @media screen and (max-width: 768px) {
   body {
