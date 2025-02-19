@@ -1,72 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: image(https://www.google.com/url?sa=i&url=https%3A%2F%2Ftienphong.vn%2Fchuyen-gi-xay-ra-neu-ban-nhin-thang-vao-mat-troi-post956354.tpo&psig=AOvVaw3dJeqL1Had6Wiy2vZdMmkX&ust=1739978958375000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCICw1_DEzYsDFQAAAAAdAAAAABAE);
+}
+
+/* HEADER CHUNG */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #385f84, #3498db); /* Màu xanh đậm */
+  padding: 15px 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* LOGO & TIÊU ĐỀ */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
 h1 {
-  text-align: center;
-  color: red;
-  font-size: 50px;
-}
-
-.link {
-  color: black;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 30px;
-}
-
-div {
-  height: fit-content;
-  width: fit-content;
-  padding: auto
-
-  margin: 30px;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  color: red;
-}
-
-a:visited {
-  color: purple;
-}
-
-span {
-  font-weight: 600;
-}
-
-.hehe {
-  width: fit-content;
-  height: fit-content;
-  font-size: 20px;
-
-}
-
-ol {
-  list-style-type: upper-roman;
-  
-
-}
-
-
-p {
-  font-size: 20px;
-}
-
-h3{
-  margin-top: 50px;
-  font-size: 30px;
-}
-
-pre{
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-  margin-bottom: 5px;
-  height: fit-content;
-  width: fit-content;
-
-}
-
-span{
+  font-size: 24px;
   font-weight: bold;
+  margin: 0;
+  width: 400px;
+  color: #ddd;
 }
 
+/* MENU ĐIỀU HƯỚNG */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: auto; /* Đẩy menu sát lề phải */
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #f1c40f; /* Màu vàng khi hover */
+}
+
+nav {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Bố cục danh sách */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Mục lục bên trái */
+.menu {
+  width: 25%;
+  height: 500px;
+  position: sticky;
+  overflow: scroll;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  background:
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #385f84, #3498db);
+  mar
+}
+
+.menu div {
+  background: #f4f4f4;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+  
+  margin-top: 5px;
+  width: 250px;
+  
+}
+
+.menu div:hover {
+  background: #3498db;
+  transform: scale(1.15);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  transition: color 0.3s;
+}
+
+.menu div:hover a {
+  color: white;
+}
+
+/* Khu vực hiển thị ảnh bên phải */
+#image-display {
+  width: 80%;
+  height: 600px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  background-image: url();
+}
+
+ul li a {
+  font-size: 30px;
+}

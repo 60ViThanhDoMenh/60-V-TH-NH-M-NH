@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>60 VỊ THÁNH ĐỘ MỆNH</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo" class="logo" />
+        <h1>60 Vị Thánh Độ Mệnh</h1>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="./Trangchu.html">Trang chủ</a></li>
+          <li><a href="./contact.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- Mục lục bên trái -->
+      <nav class="menu">
+        <div>
+          <a
+            href="./60 VỊ THÁNH/Tôn Giả Xá Lợi Phất/NgaiXaLoiPhat.html"
+            data-image="./60 VỊ THÁNH/Tôn Giả Xá Lợi Phất/TonGiaXaLoiPhat.jpg"
+          >
+            1. Tôn Giả Xá Lợi Phất
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/Tôn Giả Mục Kiền Liên/NgaiMucKienLien.html"
+            data-image="./60 VỊ THÁNH/Tôn Giả Mục Kiền Liên/TonGiaMucKienLien.jpg"
+          >
+            2. Tôn Giả Mục Kiền Liên
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/Tôn Giả Đại Ca Diếp/NgaiDaiCaDiep.html"
+            data-image="images/daicadiep.jpg"
+          >
+            3. Tôn Giả Đại Ca Diếp
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/Tôn Giả Đại Ca Chiên Diên/"
+            data-image="images/daicadiep.jpg"
+          >
+            4. Tôn Giả Đại Ca Chiên Diên
+          </a>
+        </div>
+      </nav>
+
+      <!-- Khu vực hiển thị ảnh bên phải -->
+      <div id="image-display"></div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const imageDisplay = document.getElementById("image-display");
+        const links = document.querySelectorAll(".menu a");
+
+        links.forEach((link) => {
+          link.addEventListener("mouseover", function () {
+            let imgSrc = link.getAttribute("data-image");
+
+            // Kiểm tra đường dẫn ảnh
+            console.log("Hover vào:", imgSrc);
+
+            if (imgSrc) {
+              imageDisplay.style.backgroundImage = `url('${imgSrc}')`;
+            }
+          });
+
+          link.addEventListener("mouseout", function () {
+            imageDisplay.style.backgroundImage = "none";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
