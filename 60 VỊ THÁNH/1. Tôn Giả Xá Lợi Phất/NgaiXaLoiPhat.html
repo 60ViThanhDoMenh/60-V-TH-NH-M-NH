@@ -19,45 +19,7 @@
         });
       });
     </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const menuItems = document.querySelectorAll(".menu div");
 
-        function saveActiveItem(path) {
-          localStorage.setItem("activeMenuItem", path);
-        }
-
-        function getActiveItem() {
-          return localStorage.getItem("activeMenuItem");
-        }
-
-        function setActiveItem(item) {
-          menuItems.forEach((el) => el.classList.remove("active"));
-          item.classList.add("active");
-        }
-
-        // Khi tải trang, kiểm tra xem có mục nào đã được chọn trước đó không
-        const savedPath = getActiveItem();
-        if (savedPath) {
-          menuItems.forEach((item) => {
-            const link = item.querySelector("a");
-            if (link && link.getAttribute("href") === savedPath) {
-              setActiveItem(item);
-            }
-          });
-        }
-
-        // Xử lý khi click vào mục mới
-        menuItems.forEach((item) => {
-          item.addEventListener("click", function (event) {
-            const link = this.querySelector("a");
-            if (link) {
-              saveActiveItem(link.getAttribute("href"));
-            }
-          });
-        });
-      });
-    </script>
     <header>
       <div class="logo-container">
         <img src="../../logo.jpg" alt="Logo" class="logo" />
