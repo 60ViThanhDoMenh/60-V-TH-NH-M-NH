@@ -90,9 +90,10 @@ nav {
 /* Mục lục bên trái */
 .menu {
   width: 30%;
-  height: 600px;
+  height: 622px;
   position: sticky;
   overflow: scroll;
+  overflow-x: hidden;
   margin: 0 auto;
   left: 0px;
   border: 1px solid #ddd;
@@ -140,7 +141,7 @@ nav {
 /* Khu vực hiển thị ảnh bên phải */
 #image-display {
   width: 80%;
-  height: 600px;
+  height: 622px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
