@@ -3,6 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io (1)/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io (1)/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io (1)/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_io (1)/site.webmanifest" />
     <link rel="stylesheet" href="style.css" />
     <title>60 VỊ THÁNH ĐỘ MỆNH</title>
   </head>
@@ -27,6 +45,16 @@
           link.addEventListener("mouseout", function () {
             imageDisplay.style.backgroundImage = "none";
           });
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let currentPath = window.location.pathname;
+        document.querySelectorAll(".nav-menu a").forEach((link) => {
+          if (link.href.includes(currentPath)) {
+            link.classList.add("active");
+          }
         });
       });
     </script>
@@ -380,11 +408,7 @@
       </nav>
 
       <!-- Khu vực hiển thị ảnh bên phải -->
-      <div id="image-display">
-        <video width="500px" height="625px" controls autoplay loop>
-          <source src="./video.mp4" />
-        </video>
-      </div>
+      <div id="image-display"></div>
     </div>
   </body>
 </html>

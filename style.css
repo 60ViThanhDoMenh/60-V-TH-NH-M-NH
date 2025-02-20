@@ -28,7 +28,7 @@ header {
   margin-right: 10px;
 }
 
-h1 {
+.logo-container h1 {
   font-size: 24px;
   font-weight: bold;
   margin: 0;
@@ -175,15 +175,21 @@ ul li a {
 
 .nav-menu li a:hover::after,
 .nav-menu li a.active::after {
-  transform: scale(0.8);
+  transform: scale(0.5);
 }
 
-.nav-menu li a.active {
+.nav-menu a.active {
   color: #f1c40f; /* Màu chữ cho mục được chọn */
   font-weight: bold;
-  transform: scale(1.3);
+  transform: scale(1.3) translateY(-5px) ;
+  
 }
 
+#network{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 @media screen and (max-width: 768px) {

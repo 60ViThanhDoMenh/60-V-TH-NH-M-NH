@@ -1,9 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Về Chúng Con</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io (1)/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io (1)/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io (1)/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_io (1)/site.webmanifest" />
+    <title>60 VỊ THÁNH ĐỘ MỆNH</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const imageDisplay = document.getElementById("image-display");
+        const links = document.querySelectorAll(".menu a");
+
+        links.forEach((link) => {
+          link.addEventListener("mouseover", function () {
+            let imgSrc = link.getAttribute("data-image");
+
+            // Kiểm tra đường dẫn ảnh
+            console.log("Hover vào:", imgSrc);
+
+            if (imgSrc) {
+              imageDisplay.style.backgroundImage = `url('${imgSrc}')`;
+            }
+          });
+
+          link.addEventListener("mouseout", function () {
+            imageDisplay.style.backgroundImage = "none";
+          });
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let currentPath = window.location.pathname;
+        document.querySelectorAll(".nav-menu a").forEach((link) => {
+          if (link.href.includes(currentPath)) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+
+    <header>
+      <div class="logo-container">
+        <img src="./logo.jpg" alt="Logo" class="logo" />
+        <h1>60 Vị Thánh Độ Mệnh</h1>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="./index.html">Trang chủ</a></li>
+          <li><a href="./60ViThanhDoMenh.html">60 Vị Thánh Độ Mệnh</a></li>
+          <li><a href="./contact.html">Liên hệ</a></li>
+          <li><a href="./aboutus.html">Về chúng con</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>Dạ chúng con đang cập nhật thêm ạ</h1>
+    </div>
+  </body>
 </html>
