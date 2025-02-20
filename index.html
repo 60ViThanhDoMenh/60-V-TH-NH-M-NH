@@ -50,16 +50,31 @@
     </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        let currentPath = window.location.pathname.split("/").pop(); // Lấy tên file cuối cùng trong URL
-        if (currentPath === "") currentPath = "index.html"; // Nếu đường dẫn rỗng, mặc định là trang chủ
+        // Lấy đường dẫn trang hiện tại và chuyển về chữ thường
+        let currentPage = window.location.pathname
+          .split("/")
+          .pop()
+          .toLowerCase();
 
-        document.querySelectorAll(".nav-menu a").forEach((link) => {
-          let linkPath = link.getAttribute("href").split("/").pop(); // Lấy tên file từ href
+        // Nếu không có tên file (trang chủ), mặc định là "index.html"
+        if (currentPage === "" || currentPage === "/") {
+          currentPage = "index.html";
+        }
 
-          if (linkPath === currentPath) {
+        // Lấy tất cả các thẻ <a> trong .nav-menu
+        let menuLinks = document.querySelectorAll(".nav-menu a");
+
+        // Duyệt qua từng link để kiểm tra nếu nó trùng với trang hiện tại
+        menuLinks.forEach((link) => {
+          // Lấy giá trị href, loại bỏ "./" nếu có và chuyển về chữ thường
+          let linkHref = link
+            .getAttribute("href")
+            .replace("./", "")
+            .toLowerCase();
+
+          // So sánh với trang hiện tại
+          if (linkHref === currentPage) {
             link.classList.add("active");
-          } else {
-            link.classList.remove("active"); // Đảm bảo các thẻ khác không bị highlight
           }
         });
       });
@@ -81,7 +96,7 @@
     </header>
 
     <div id="network">
-      <video width="500px" height="640px" controls autoplay loop>
+      <video width="500px" height="640px" controls loop autoplay muted>
         <source src="./video.mp4" />
       </video>
     </div>

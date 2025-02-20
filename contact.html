@@ -58,6 +58,37 @@
         });
       });
     </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Lấy đường dẫn trang hiện tại và chuyển về chữ thường
+        let currentPage = window.location.pathname
+          .split("/")
+          .pop()
+          .toLowerCase();
+
+        // Nếu không có tên file (trang chủ), mặc định là "index.html"
+        if (currentPage === "" || currentPage === "/") {
+          currentPage = "index.html";
+        }
+
+        // Lấy tất cả các thẻ <a> trong .nav-menu
+        let menuLinks = document.querySelectorAll(".nav-menu a");
+
+        // Duyệt qua từng link để kiểm tra nếu nó trùng với trang hiện tại
+        menuLinks.forEach((link) => {
+          // Lấy giá trị href, loại bỏ "./" nếu có và chuyển về chữ thường
+          let linkHref = link
+            .getAttribute("href")
+            .replace("./", "")
+            .toLowerCase();
+
+          // So sánh với trang hiện tại
+          if (linkHref === currentPage) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
 
     <header>
       <div class="logo-container">
