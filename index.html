@@ -50,10 +50,16 @@
     </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        let currentPath = window.location.pathname;
+        let currentPath = window.location.pathname.split("/").pop(); // Lấy tên file cuối cùng trong URL
+        if (currentPath === "") currentPath = "index.html"; // Nếu đường dẫn rỗng, mặc định là trang chủ
+
         document.querySelectorAll(".nav-menu a").forEach((link) => {
-          if (link.href.includes(currentPath)) {
+          let linkPath = link.getAttribute("href").split("/").pop(); // Lấy tên file từ href
+
+          if (linkPath === currentPath) {
             link.classList.add("active");
+          } else {
+            link.classList.remove("active"); // Đảm bảo các thẻ khác không bị highlight
           }
         });
       });
