@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>60 VỊ THÁNH ĐỘ MỆNH</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const imageDisplay = document.getElementById("image-display");
+        const links = document.querySelectorAll(".menu a");
+
+        links.forEach((link) => {
+          link.addEventListener("mouseover", function () {
+            let imgSrc = link.getAttribute("data-image");
+
+            // Kiểm tra đường dẫn ảnh
+            console.log("Hover vào:", imgSrc);
+
+            if (imgSrc) {
+              imageDisplay.style.backgroundImage = `url('${imgSrc}')`;
+            }
+          });
+
+          link.addEventListener("mouseout", function () {
+            imageDisplay.style.backgroundImage = "none";
+          });
+        });
+      });
+    </script>
+
+    <header>
+      <div class="logo-container">
+        <img src="./logo.jpg" alt="Logo" class="logo" />
+        <h1>60 Vị Thánh Độ Mệnh</h1>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="./index.html">Trang chủ</a></li>
+          <li><a href="./60ViThanhDoMenh.html">60 Vị Thánh Độ Mệnh</a></li>
+          <li><a href="./contact.html">Liên hệ</a></li>
+          <li><a href="./aboutus.html">Về chúng con</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- Mục lục bên trái -->
+      <nav class="menu">
+        <div>
+          <a
+            href="./60 VỊ THÁNH/1. Tôn Giả Xá Lợi Phất/NgaiXaLoiPhat.html"
+            data-image="./60 VỊ THÁNH/1. Tôn Giả Xá Lợi Phất/TonGiaXaLoiPhat.jpg"
+          >
+            1. Tôn Giả Xá Lợi Phất
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/2. Tôn Giả Mục Kiền Liên/NgaiMucKienLien.html"
+            data-image="./60 VỊ THÁNH/2. Tôn Giả Mục Kiền Liên/TonGiaMucKienLien.jpg"
+          >
+            2. Tôn Giả Mục Kiền Liên
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/3. Tôn Giả Đại Ca Diếp/NgaiDaiCaDiep.html"
+            data-image="./60 VỊ THÁNH/3. Tôn Giả Đại Ca Diếp/TonGiaDaiCaDiep.jpg"
+          >
+            3. Tôn Giả Đại Ca Diếp
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/4. Tôn Giả Đại Ca Chiên Diên/NgaiDaiCaChienDien.html"
+            data-image="./60 VỊ THÁNH/4. Tôn Giả Đại Ca Chiên Diên/TonGiaDaiCaChienDien.jpg"
+          >
+            4. Tôn Giả Đại Ca Chiên Diên
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/5. Tôn Giả A Nan/NgaiANan.html"
+            data-image="./60 VỊ THÁNH/5. Tôn Giả A Nan/TonGiaANan.jpg"
+          >
+            5. Tôn Giả A Nan
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/6. Tôn Giả A Nậu Lâu Đà/NgaiANauLauDa.html"
+            data-image="./60 VỊ THÁNH/6. Tôn Giả A Nậu Lâu Đà/TonGiaANauLauDa.jpg"
+          >
+            6. Tôn Giả A Nậu Lâu Đà
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/7. Tôn Giả La Hầu La/NgaiLaHauLa.html"
+            data-image="./60 VỊ THÁNH/7. Tôn Giả La Hầu La/TonGiaLaHauLa.jpg"
+          >
+            7. Tôn Giả La Hầu La
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/8. Tôn Giả Tu Bồ Đề/NgaiTuBoDe.html"
+            data-image="./60 VỊ THÁNH/8. Tôn Giả Tu Bồ Đề/TonGiaTuBoDe.jpg"
+          >
+            8. Tôn Giả Tu Bồ Đề
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/9. Tôn Giả Phú Lâu Na Mãn Từ Tử/NgaiPhuLauNaManTuTu.html"
+            data-image="./60 VỊ THÁNH/9. Tôn Giả Phú Lâu Na Mãn Từ Tử/TonGiaPhuLauNaManTuTu.jpg"
+          >
+            9. Tôn Giả Phú Lâu Na Mãn Từ Tử
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/10. Tôn Giả Ưu Ba Ly/NgaiUuBaLy.html"
+            data-image="./60 VỊ THÁNH/10. Tôn Giả Ưu Ba Ly/TonGiaUuBaLy.jpg"
+          >
+            10. Tôn Giả Ưu Ba Ly
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/11. Tôn Giả A Nhã Kiều Trần Như/NgaiANhaKieuTranNhu.html"
+            data-image="./60 VỊ THÁNH/11. Tôn Giả A Nhã Kiều Trần Như/TonGiaANhaKieuTranNhu.jpg"
+          >
+            11. Tôn Giả A Nhã Kiều Trần Như
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/12. Tôn Giả Hồ Nghi Ly Viết/NgaiHoNghiLyViet.html"
+            data-image="./60 VỊ THÁNH/12. Tôn Giả Hồ Nghi Ly Viết/TonGiaHoNghiLyViet.jpg"
+          >
+            12. Tôn Giả Hồ Nghi Ly Viết
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/13. Tôn Giả Kiếp Tân Na/NgaiKiepTanNa.html"
+            data-image="./60 VỊ THÁNH/13. Tôn Giả Kiếp Tân Na/TonGiaKiepTanNa.jpg"
+          >
+            13. Tôn Giả Kiếp Tân Na
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/14. Tôn Giả Ba Đề Thích Vương/NgaiBaDeThichVuong.html"
+            data-image="./60 VỊ THÁNH/14. Tôn Giả Ba Đề Thích Vương/TonGiaBaDeThichVuong.jpg"
+          >
+            14. Tôn Giả Ba Đề Thích Vương
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/15. Tôn Giả Lakuntaka Bhaddiya/NgaiLakuntakaBhaddiya.html"
+            data-image="./60 VỊ THÁNH/15. Tôn Giả Lakuntaka Bhaddiya/TonGiaLakuntakaBhaddiya.jpg"
+          >
+            15. Tôn Giả Lakuntaka Bhaddiya
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/16. Tôn Giả La Đà/NgaiLaDa.html"
+            data-image="./60 VỊ THÁNH/16. Tôn Giả La Đà/TonGiaLaDa.jpg"
+          >
+            16. Tôn Giả La Đà
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/17. Tôn Giả Nan Đà/NgaiNanDa.html"
+            data-image="./60 VỊ THÁNH/17. Tôn Giả Nan Đà/TonGiaNanDa.jpg"
+          >
+            17. Tôn Giả Nan Đà
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/18. Tôn Giả Tu Nê Đa/NgaiTuNeDa.html"
+            data-image="./60 VỊ THÁNH/18. Tôn Giả Tu Nê Đa/TonGiaTuNeDa.jpg"
+          >
+            18. Tôn Giả Tu Nê Đa
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/19. Tôn Giả Lai Tra Hòa La/NgaiLaiTraHoaLa.html"
+            data-image="./60 VỊ THÁNH/19. Tôn Giả Lai Tra Hòa La/TonGiaLaiTraHoaLa.jpg"
+          >
+            19. Tôn Giả Lai Tra Hòa La
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/20. Tôn Giả Đại Câu Hi La/NgaiDaiCauHiLa.html"
+            data-image="./60 VỊ THÁNH/20. Tôn Giả Đại Câu Hi La/TonGiaDaiCauHiLa.jpg"
+          >
+            20. Tôn Giả Đại Câu Hi La
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/21. Tôn Giả Ưu Lâu Tần Loa Ca Diếp/NgaiUuLauTanLoaCaDiep.html"
+            data-image="./60 VỊ THÁNH/21. Tôn Giả Ưu Lâu Tần Loa Ca Diếp/TonGiaUuLauTanLoaCaDiep.jpg"
+          >
+            21. Tôn Giả Ưu Lâu Tần Loa Ca Diếp
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/22. Tôn Giả Thi Bà La/NgaiThiBaLa.html"
+            data-image="./60 VỊ THÁNH/22. Tôn Giả Thi Bà La/TonGiaThiBaLa.jpg"
+          >
+            22. Tôn Giả Thi Bà La
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/23. Tôn Giả Nhị Thập Ức Nhĩ/NgaiNhiThapUcNhi.html"
+            data-image="./60 VỊ THÁNH/23. Tôn Giả Nhị Thập Ức Nhĩ/TonGiaNhiThapUcNhi.jpg"
+          >
+            23. Tôn Giả Nhị Thập Ức Nhĩ
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/24. Tôn Giả Sona Kutikanna/NgaiSonaKutikanna.html"
+            data-image="./60 VỊ THÁNH/24. Tôn Giả Sona Kutikanna/TonGiaSonaKutikanna.jpg"
+          >
+            24. Tôn Giả Sona Kutikanna
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/25. Tôn Giả Ba Ca Lợi/NgaiBaCaLoi.html"
+            data-image="./60 VỊ THÁNH/25. Tôn Giả Ba Ca Lợi/TonGiaBaCaLoi.jpg"
+          >
+            25. Tôn Giả Bà Ca Lợi
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/26. Tôn Giả Kiều Phạm Ba Đề/NgaiKieuPhamBaDe.html"
+            data-image="./60 VỊ THÁNH/26. Tôn Giả Kiều Phạm Ba Đề/TonGiaKieuPhamBaDe.jpg"
+          >
+            26. Tôn Giả Kiều Phạm Ba Đề
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/27. Tôn Giả Bằng Kỳ Xá/NgaiBangKyXa.html"
+            data-image="./60 VỊ THÁNH/27. Tôn Giả Bằng Kỳ Xá/TonGiaBangKyXa.jpg"
+          >
+            27. Tôn Giả Bằng Kỳ Xá
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/28. Tôn Giả Đà La Bà Ma La/NgaiDaLaBaMaLa.html"
+            data-image="./60 VỊ THÁNH/28. Tôn Giả Đà La Bà Ma La/TonGiaDaLaBaMaLa.jpg"
+          >
+            28. Tôn Giả Đà La Bà Ma La
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/29. Tôn Giả Pilindavaccha/NgaiPilindavaccha.html"
+            data-image="./60 VỊ THÁNH/29. Tôn Giả Pilindavaccha/TonGiaPilindavaccha.jpg"
+          >
+            29. Tôn Giả Pilindavaccha
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/30. Tôn Giả Câu Ma La Ca Diếp/NgaiCauMaLaCaDiep.html"
+            data-image="./60 VỊ THÁNH/30. Tôn Giả Câu Ma La Ca Diếp/TonGiaCauMaLaCaDiep.jpg"
+          >
+            30. Tôn Giả Câu Ma La Ca Diếp
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/31. Tôn Giả Vanavasi Tissa/NgaiVanavasiTissa.html"
+            data-image="./60 VỊ THÁNH/31. Tôn Giả Vanavasi Tissa/TonGiaVanavasiTissa.jpg"
+          >
+            31. Tôn Giả Vanavasi Tissa
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/32. Tôn Giả Ca Lu Đà Di/NgaiCaLuDaDi.html"
+            data-image="./60 VỊ THÁNH/32. Tôn Giả Ca Lu Đà Di/TonGiaCaLuDaDi.jpg"
+          >
+            32. Tôn Giả Ca Lu Đà Di
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/33. Tôn Giả Bạc Câu La/NgaiBacCauLa.html"
+            data-image="./60 VỊ THÁNH/33. Tôn Giả Bạc Câu La/TonGiaBacCauLa.jpg"
+          >
+            33. Tôn Giả Bạc Câu La
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/34. Tôn Giả Sobhita/NgaiSobhita.html"
+            data-image="./60 VỊ THÁNH/34. Tôn Giả Sobhita/TonGiaSobhita.jpg"
+          >
+            34. Tôn Giả Sobhita
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/35. Tôn Giả Nan Đà Ca/NgaiNanDaCa.html"
+            data-image="./60 VỊ THÁNH/35. Tôn Giả Nan Đà Ca/TonGiaNanDaCa.jpg"
+          >
+            35. Tôn Giả Nan Đà Ca
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/36. Tôn Giả Diện Vương/NgaiDienVuong.html"
+            data-image="./60 VỊ THÁNH/36. Tôn Giả Diện Vương/TonGiaDienVuong.jpg"
+          >
+            36. Tôn Giả Diện Vương
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/37. Tôn Giả Kim Tỳ La/NgaiKimTyLa.html"
+            data-image="./60 VỊ THÁNH/37. Tôn Giả Kim Tỳ La/TonGiaKimTyLa.jpg"
+          >
+            37. Tôn Giả Kim Tỳ La
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/38. Tôn Giả Nan Đề/NgaiNanDe.html"
+            data-image="./60 VỊ THÁNH/38. Tôn Giả Nan Đề/TonGiaNanDe.jpg"
+          >
+            38. Tôn Giả Nan Đề
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/39. Tôn Giả Tân Đầu Lô Phả La Đọa/NgaiTanDauLoPhaLaDoa.html"
+            data-image="./60 VỊ THÁNH/39. Tôn Giả Tân Đầu Lô Phả La Đọa/TonGiaTanDauLoPhaLaDoa.jpg"
+          >
+            39. Tôn Giả Tân Đầu Lô Phả La Đọa
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/40. Tôn Giả Châu Lợi Bàn Đặc/NgaiChauLoiBanDac.html"
+            data-image="./60 VỊ THÁNH/40. Tôn Giả Châu Lợi Bàn Đặc/TonGiaChauLoiBanDac.jpg"
+          >
+            40. Tôn Giả Châu Lợi Bàn Đặc
+          </a>
+        </div>
+        <div>
+          <a
+            href="./60 VỊ THÁNH/30. Tôn Giả Câu Ma La Ca Diếp/NgaiCauMaLaCaDiep.html"
+            data-image="./60 VỊ THÁNH/30. Tôn Giả Câu Ma La Ca Diếp/TonGiaCauMaLaCaDiep.jpg"
+          >
+            30. Tôn Giả Câu Ma La Ca Diếp
+          </a>
+        </div>
+      </nav>
+
+      <!-- Khu vực hiển thị ảnh bên phải -->
+      <div id="image-display">
+        <video width="500px" height="625px" controls autoplay loop>
+          <source src="./video.mp4" />
+        </video>
+      </div>
+    </div>
+  </body>
+</html>

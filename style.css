@@ -198,6 +198,7 @@ ul li a {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    position: sticky;
   }
 
   .logo-container {
