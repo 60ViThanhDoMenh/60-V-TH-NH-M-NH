@@ -195,6 +195,8 @@ ul li a {
 @media screen and (max-width: 780px) {
   body {
     font-size: 16px;
+    width: 100%;
+    overflow-x: hidden;
   }
 
   /* HEADER */
@@ -247,9 +249,10 @@ ul li a {
 
 
 
-  .container{
-    padding-top: 2px;
-  }
+  .container {
+    max-width: 100%;
+    margin: 0 auto; /* Căn giữa nội dung */
+}
 
   /* MENU BÊN TRÁI */
   .menu {
