@@ -32,7 +32,7 @@ header {
   font-size: 24px;
   font-weight: bold;
   margin: 0;
-  width: 400px;
+  width: fit-content;
   color: #ddd;
 }
 
@@ -192,7 +192,7 @@ ul li a {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
   body {
     font-size: 16px;
   }
@@ -204,7 +204,8 @@ ul li a {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    position: sticky;
+    width: 100%;
+    
   }
 
   .logo-container {
@@ -214,6 +215,7 @@ ul li a {
 
   .logo {
     height: 50px;
+    
   }
 
   h1 {
@@ -230,6 +232,7 @@ ul li a {
 
   .nav-menu li {
     margin: 10px 0;
+    
   }
 
   .nav-menu a {
@@ -237,6 +240,7 @@ ul li a {
     display: inline-block;
     padding: 10px;
     color: white;
+    
   }
 
 
